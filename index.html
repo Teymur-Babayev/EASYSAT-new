@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/logoNuevo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EASYSAT</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.process = {
+          env: {
+              NODE_ENV: 'development' // o 'production' según necesites
+          }
+      };
+  </script>
+    <script type="module">
+      import ReactMarkdown from "https://esm.sh/react-markdown@7?bundle";
+    </script>
+  </body>
+</html>
